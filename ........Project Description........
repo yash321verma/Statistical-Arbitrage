@@ -1,0 +1,22 @@
+# Statistical-Arbitrage
+Stocks Prediction  Machine Learning Algorithm
+
+This Project is based on nse_data.csv . 
+The  dataset is provided in my Statistical-Arbitrage directory.
+
+For a family of stocks, generally belonging to the same sector or industry, there exists a correlation between prices of each of the stocks.
+There, though, exist anomalous times when for a small period of time, the correlation is broken. 
+But the market self corrects in some time and the correlation is re-established.
+During this small window of time when correlation is anomalous, there exists a money-making opportunity for quantitative traders. 
+** First, you have many types of data The stock market is like candy-land for any data scientists who are even remotely interested in finance. hat you can choose from. You can find prices, fundamentals, global macroeconomic indicators, volatility indices, etc… the list goes on and on. Second, the data can be very granular.
+You can easily get time series data by day (or even minute) for each company, which allows you think creatively about trading strategies. 
+Finally, the financial markets generally have short feedback cycles. 
+Therefore, you can quickly validate your predictions on new data.
+
+I prepared the dataset using 2016 nse stocks ,stock prices depends on previous stock price values.So,while training I trained it with previous 10 day
+values .I took features like SYMBOL(for name of the stock),SERIES(to which series does the stock belong),TIMESTAMP(stockprices depend on seasons also,for example 
+durig monsoon prices of certain stocks change),and the previous 10 day values of the given stock.
+
+Random Forest Regression model was used  with 125 trees and bootstrapped data.
+
+2 models were prepared one for studying highvalues and other for low values. 
