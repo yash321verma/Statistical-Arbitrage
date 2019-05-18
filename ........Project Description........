@@ -2,7 +2,7 @@
 Stocks Prediction  Machine Learning Algorithm
 
 This Project is based on nse_data.csv . 
-The  dataset is provided in my Statistical-Arbitrage directory.
+The  dataset link is:https://drive.google.com/file/d/1kyNXxSM-_MSW4kSUJ90HlPQaxPCVti5L/view?usp=sharing
 
 For a family of stocks, generally belonging to the same sector or industry, there exists a correlation between prices of each of the stocks.
 There, though, exist anomalous times when for a small period of time, the correlation is broken. 
@@ -20,3 +20,10 @@ durig monsoon prices of certain stocks change),and the previous 10 day values of
 Random Forest Regression model was used  with 125 trees and bootstrapped data.
 
 2 models were prepared one for studying highvalues and other for low values. 
+
+The accuracy of modelhigh was 83%
+
+The accuracy of modellow was 84%
+
+The accuracy can be improved by increasing the number of trees ,but it is computationally expensive.
+
