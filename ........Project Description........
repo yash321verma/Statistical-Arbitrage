@@ -15,7 +15,8 @@ Therefore, you can quickly validate your predictions on new data.
 
 I prepared the dataset using 2016 nse stocks ,stock prices depends on previous stock price values.So,while training I trained it with previous 10 day
 values .I took features like SYMBOL(for name of the stock),SERIES(to which series does the stock belong),TIMESTAMP(stockprices depend on seasons also,for example 
-durig monsoon prices of certain stocks change),and the previous 10 day values of the given stock.
+durig monsoon prices of certain stocks change),and the previous 10 day values of the given stock.Other features were removed because they were highly correlated
+among themselves.
 
 Random Forest Regression model was used  with 125 trees and bootstrapped data.
 
